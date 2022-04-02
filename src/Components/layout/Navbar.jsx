@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import SignedInLinks from './SignedInLinks'
 
 function Navbar() {
   return (
@@ -8,6 +9,7 @@ function Navbar() {
             <Link to='/' className='brand-logo'>
                 Update
             </Link>
+            <SignedInLinks/>
         </div>
     </nav>
   )
