@@ -1,12 +1,16 @@
 import './App.css';
-import {BrowserRouter} from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Navbar from './Components/layout/Navbar';
+import Dashboard from './Components/dashboard/Dashboard';
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
-     <Navbar/> 
+     <Navbar/>
+     <Switch>
+       <Route path='/' component={Dashboard}/>
+     </Switch>
     </div>
     </BrowserRouter>
   );
